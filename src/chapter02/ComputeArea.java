@@ -3,11 +3,6 @@ package chapter02;
 public class ComputeArea {
 	public static void main(String[] args) {
 
-		
-		
-		
-		
-		
 		// Assign a radius
 		double radius = 50; // New value is radius
 
