@@ -2,7 +2,7 @@ package chapter05;
 
 import java.util.Scanner;
 
-public class GuessNumber {
+public class GuessNumberDoWhile {
 	public static void main(String[] args) {
 		// Generate a random number to be guessed
 		int number = (int) (Math.random() * 101);
@@ -10,8 +10,8 @@ public class GuessNumber {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Guess a magic number between 0 and 100");
 
-		int guess = -1;
-		while (guess != number) {
+		int guess;
+		do {
 			// Prompt the user to guess the number
 			System.out.print("\nEnter your guess: ");
 			guess = input.nextInt();
@@ -22,6 +22,6 @@ public class GuessNumber {
 				System.out.println("Your guess is too high");
 			else
 				System.out.println("Your guess is too low");
-		} // End of loop
+		} while (guess != number); // End of loop
 	}
 }
