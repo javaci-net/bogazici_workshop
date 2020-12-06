@@ -1,6 +1,6 @@
 package chapter07;
 
-import chapter06.RandomCharacter;
+import chapter06.altPaket.RandomCharacter;
 
 public class CountLettersInArray {
   /** Main method */
